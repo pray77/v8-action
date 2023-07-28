@@ -14,7 +14,7 @@ on:
 
 env:
   PATCH_FLAG: true
-  COMMIT: 65391ca8244350d9e6af8a67cc5ad50e9d5dc1a0
+  COMMIT: d2db1ff1b7bf9d9adb3ae2c7fada1ed41717de49
   DEPOT_UPLOAD: true
   SRC_UPLOAD: true
   BINARY_UPLOAD: false
@@ -23,7 +23,7 @@ env:
 jobs:
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id 	
     
     steps:
