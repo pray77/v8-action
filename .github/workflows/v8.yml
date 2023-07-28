@@ -14,7 +14,7 @@ on:
 
 env:
   PATCH_FLAG: true
-  COMMIT: 37f108dbf2253617072797ef915d41e0f6cf7e8f
+  COMMIT: 65391ca8244350d9e6af8a67cc5ad50e9d5dc1a0
   DEPOT_UPLOAD: true
   SRC_UPLOAD: true
   BINARY_UPLOAD: false
@@ -29,8 +29,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-      with:
-        fetch-depth: 0
     # init ubuntu1804 environment
     - name: init env
       run: |
