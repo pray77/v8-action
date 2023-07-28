@@ -29,7 +29,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-      
+      with:
+        fetch-depth: 0
     # init ubuntu1804 environment
     - name: init env
       run: |
